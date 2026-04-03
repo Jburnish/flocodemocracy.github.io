@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet the Florence County Democratic candidates running for office in Florence County, SC. Browse by race, name, or district." />
+  <title>Candidates | FloCo Democracy</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&family=Source+Serif+4:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Skip Navigation (WCAG 2.4.1) -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="/" class="site-logo" aria-label="FloCo Democracy – Home">
+        <span class="logo-star" aria-hidden="true">★</span>
+        <span class="logo-text">
+          <span class="logo-floco">FloCo</span>
+          <span class="logo-dem">Democracy</span>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="/#volunteer">Volunteer</a></li>
+          <li><a href="/candidates/" aria-current="page">Candidates</a></li>
+          <li><a href="/#about">About</a></li>
+          <li>
+            <a
+              href="http://volunteer.flocodemocracy.org"
+              class="nav-cta"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Sign up to volunteer (opens in a new tab)"
+            >Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="container">
+        <span class="section-label section-label--light">Our Candidates</span>
+        <h1 id="page-hero-heading">Florence County Democratic Candidates</h1>
+        <p>
+          Meet the Democrats running for office across Florence County — from city council and
+          school board to the SC Governor and the U.S. Senate. Support them, share their stories, and
+          help them win.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== SEARCH / FILTER ===================== -->
+    <section class="candidates-controls" aria-label="Search and filter candidates">
+      <div class="container controls-inner">
+        <div class="search-wrap">
+          <label for="candidate-search" class="visually-hidden">Search candidates</label>
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="20" height="20">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+          <input
+            type="search"
+            id="candidate-search"
+            class="search-input"
+            placeholder="Search by name, seat, or district…"
+            aria-label="Search candidates by name, seat, or district"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="filter-wrap">
+          <label for="race-filter" class="filter-label">Filter by race type:</label>
+          <select id="race-filter" class="filter-select" aria-label="Filter candidates by race type">
+            <option value="">All races</option>
+            <option value="county-council">County Council</option>
+            <option value="school-board">School Board</option>
+            <option value="sc-house">SC House</option>
+            <option value="sc-senate">SC Senate</option>
+            <option value="city-council">City Council</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CANDIDATES LIST ===================== -->
+    <section class="candidates-list-section" aria-labelledby="candidates-list-heading">
+      <div class="container">
+        <h2 id="candidates-list-heading" class="visually-hidden">Candidate profiles</h2>
+
+        <!-- Live region announces search results to screen readers -->
+        <p
+          id="results-count"
+          class="results-count"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></p>
+
+        <div
+          id="candidate-grid"
+          class="candidate-grid"
+          aria-label="Candidate profiles"
+        >
+
+          <!-- ─────────────────────────────────────────────────────
+               Candidate cards.
+               Each article uses:
+                 data-name   — full name (for search)
+                 data-seat   — seat/office (for search)
+                 data-race   — race type slug matching <select> options
+               ───────────────────────────────────────────────────── -->
+
+          <!-- Candidate 1 — Placeholder -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c1-name"
+            data-name="Jane Doe"
+            data-seat="Florence County Council, District 1"
+            data-race="county-council"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Jane Doe"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c1-name" class="candidate-name">Jane Doe</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Florence County Council, District 1
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Jane Doe has been a Florence County resident for over 20 years, raising her
+                  family and building her small business right here in our community. She believes
+                  in transparent, accountable government that works for every resident.
+                </p>
+                <p>
+                  If elected, Jane will focus on improving local infrastructure, expanding access
+                  to affordable healthcare, and creating good-paying jobs for Florence County families.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Jane Doe's links">
+                <a href="#" class="candidate-link" aria-label="Jane Doe's campaign website">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+                <a href="#" class="candidate-link" aria-label="Jane Doe on Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                  Facebook
+                </a>
+                <a href="#" class="candidate-link" aria-label="Jane Doe on X / Twitter">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  X / Twitter
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Candidate 2 — Placeholder -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c2-name"
+            data-name="John Smith"
+            data-seat="SC House of Representatives, District 57"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of John Smith"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c2-name" class="candidate-name">John Smith</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 57
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  John Smith grew up in Florence and attended Florence-Darlington Technical College
+                  before serving our country in the United States Army for eight years. He returned
+                  home with a deep commitment to public service.
+                </p>
+                <p>
+                  John's platform centers on fully funding public education, protecting voting rights,
+                  and ensuring that every veteran in the Pee Dee region receives the benefits and
+                  care they have earned.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="John Smith's links">
+                <a href="#" class="candidate-link" aria-label="John Smith's campaign website">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+                <a href="#" class="candidate-link" aria-label="John Smith on Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                  Facebook
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /#candidate-grid -->
+
+        <!-- No results message (hidden by default) -->
+        <div id="no-results" class="no-results" hidden aria-live="polite">
+          <p>No candidates match your search. <button class="link-btn" id="clear-filters">Clear filters</button></p>
+        </div>
+
+        <!-- Add candidate CTA -->
+        <div class="candidates-note" role="note">
+          <p>
+            <strong>Are you a Florence County Democratic candidate?</strong>
+            Contact us to have your information added to this page.
+          </p>
+          <a href="mailto:jack.burnish@flocodemocracy.org" class="btn btn-outline">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="site-logo" aria-label="FloCo Democracy – Home">
+          <span class="logo-star" aria-hidden="true">★</span>
+          <span class="logo-text">
+            <span class="logo-floco">FloCo</span>
+            <span class="logo-dem">Democracy</span>
+          </span>
+        </a>
+        <p class="footer-tagline">You don't have to work alone.</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-nav-heading">Quick Links</h2>
+        <ul role="list">
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#volunteer">Volunteer</a></li>
+          <li><a href="/candidates/">Candidates</a></li>
+          <li>
+            <a
+              href="http://volunteer.flocodemocracy.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Volunteer sign-up on Microsoft Bookings (opens in a new tab)"
+            >Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h2 class="footer-nav-heading">Contact</h2>
+        <ul role="list">
+          <li>
+            <a href="mailto:jack.burnish@flocodemocracy.org" aria-label="Email FloCo Democracy">
+              jack.burnish@flocodemocracy.org
+            </a>
+          </li>
+          <li>Florence County, South Carolina</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Florence County Democracy.
+        </p>
+        <p class="footer-accessibility">
+          This site is designed to meet
+          <a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener noreferrer">
+            WCAG 2.2 AA
+          </a>
+          accessibility standards.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="candidates.js"></script>
+</body>
+</html>

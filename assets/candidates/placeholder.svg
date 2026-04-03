@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Candidate photo placeholder">
+  <rect width="200" height="200" rx="100" fill="#E8EAED"/>
+  <!-- Body -->
+  <ellipse cx="100" cy="145" rx="55" ry="40" fill="#B0BAC8"/>
+  <!-- Head -->
+  <circle cx="100" cy="82" r="38" fill="#C4CCDA"/>
+</svg>
