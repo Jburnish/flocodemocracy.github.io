@@ -53,9 +53,15 @@
       }
     });
 
+    // Show / hide the "Clear filters" button in the controls bar
+    var filtersActive = query || race;
+    if (clearBtn) {
+      clearBtn.hidden = !filtersActive;
+    }
+
     // Update live region for screen readers
     if (resultsCount) {
-      if (query || race) {
+      if (filtersActive) {
         resultsCount.textContent =
           visible === 1
             ? '1 candidate found.'
@@ -85,6 +91,12 @@
   if (clearBtn) {
     clearBtn.addEventListener('click', clearAll);
   }
+
+  // Also wire up the "Clear filters" link inside the no-results message
+  var noResultsClearBtns = document.querySelectorAll('.js-clear-filters');
+  Array.prototype.forEach.call(noResultsClearBtns, function (btn) {
+    btn.addEventListener('click', clearAll);
+  });
 
   // Run once on load to set initial count display
   filterCandidates();
