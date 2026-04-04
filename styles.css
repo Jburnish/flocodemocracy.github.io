@@ -50,8 +50,9 @@
   padding: 0;
 }
 
-/* Enforce the HTML hidden attribute across all elements, even when
-   author styles set an explicit display value (e.g. display:flex). */
+/* Ensure the HTML hidden attribute always hides elements,
+   even when an author-stylesheet display rule (e.g. display:flex)
+   would otherwise override the browser's UA [hidden]{display:none}. */
 [hidden] { display: none !important; }
 
 html {
