@@ -98,6 +98,10 @@
             <option value="other">Other (Solicitor / Auditor)</option>
           </select>
         </div>
+
+        <button id="clear-filters" class="btn-clear-filters" hidden aria-label="Clear all filters">
+          Clear filters
+        </button>
       </div>
     </section>
 
@@ -1453,7 +1457,7 @@
 
         <!-- No results message (hidden by default) -->
         <div id="no-results" class="no-results" hidden aria-live="polite">
-          <p>No candidates match your search. <button class="link-btn" id="clear-filters">Clear filters</button></p>
+          <p>No candidates match your search. <button class="link-btn js-clear-filters">Clear filters</button></p>
         </div>
 
         <!-- Add candidate CTA -->

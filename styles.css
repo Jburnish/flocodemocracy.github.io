@@ -50,6 +50,10 @@
   padding: 0;
 }
 
+/* Enforce the HTML hidden attribute across all elements, even when
+   author styles set an explicit display value (e.g. display:flex). */
+[hidden] { display: none !important; }
+
 html {
   scroll-behavior: smooth;
 }
@@ -704,6 +708,30 @@ a:hover { color: var(--color-red); }
   outline: none;
   border-color: var(--color-navy);
   box-shadow: 0 0 0 3px rgba(0,40,104,0.15);
+}
+
+.btn-clear-filters {
+  padding: 0.5rem 0.875rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  background: transparent;
+  border: 2px solid var(--color-navy);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--transition), color var(--transition);
+}
+
+.btn-clear-filters:hover {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.btn-clear-filters:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,40,104,0.25);
 }
 
 /* ── Candidates list section ────────────────────────────────── */
