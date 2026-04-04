@@ -89,12 +89,13 @@
           <label for="race-filter" class="filter-label">Filter by race type:</label>
           <select id="race-filter" class="filter-select" aria-label="Filter candidates by race type">
             <option value="">All races</option>
-            <option value="county-council">County Council</option>
-            <option value="school-board">School Board</option>
+            <option value="governor">Governor</option>
+            <option value="us-senate">U.S. Senate</option>
+            <option value="us-house">U.S. House</option>
+            <option value="state-office">State Office</option>
             <option value="sc-house">SC House</option>
-            <option value="sc-senate">SC Senate</option>
-            <option value="city-council">City Council</option>
-            <option value="other">Other</option>
+            <option value="county-council">County Council</option>
+            <option value="other">Other (Solicitor / Auditor)</option>
           </select>
         </div>
       </div>
@@ -128,18 +129,18 @@
                  data-race   — race type slug matching <select> options
                ───────────────────────────────────────────────────── -->
 
-          <!-- Candidate 1 — Placeholder -->
+          <!-- Jermaine Johnson -->
           <article
             class="candidate-card"
             aria-labelledby="c1-name"
-            data-name="Jane Doe"
-            data-seat="Florence County Council, District 1"
-            data-race="county-council"
+            data-name="Jermaine Johnson"
+            data-seat="Governor and Lieutenant Governor"
+            data-race="governor"
           >
             <div class="candidate-photo-wrap">
               <img
                 src="../assets/candidates/placeholder.svg"
-                alt="Headshot of Jane Doe"
+                alt="Headshot of Jermaine Johnson"
                 class="candidate-photo"
                 width="200"
                 height="200"
@@ -147,7 +148,1184 @@
               />
             </div>
             <div class="candidate-info">
-              <h3 id="c1-name" class="candidate-name">Jane Doe</h3>
+              <h3 id="c1-name" class="candidate-name">Jermaine Johnson</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Governor and Lieutenant Governor
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Dr. Jermaine Johnson is a South Carolina state representative (District 52) and Democratic candidate for Governor in 2026. Born in Los Angeles on July 4, 1985, Johnson overcame hardship through basketball, earning a scholarship to the College of Charleston. He holds a bachelor's degree in communications from the College of Charleston, a master's in project management from Strayer University, and a doctorate in business administration from Northcentral University.
+                </p>
+                <p>
+                  Johnson founded Dream Team Consulting and the New Economic Beginnings Foundation, a nonprofit helping people gain employment skills. A former adjunct professor at Midlands Technical College, he is running on a platform centered on strengthening public education, expanding healthcare access, fixing infrastructure, and creating good-paying jobs for South Carolinians.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Jermaine Johnson's links">
+                <a href="https://johnsonforsc.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Jermaine Johnson's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mullins McLeod -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c2-name"
+            data-name="Mullins McLeod"
+            data-seat="Governor and Lieutenant Governor"
+            data-race="governor"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Mullins McLeod"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c2-name" class="candidate-name">Mullins McLeod</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Governor and Lieutenant Governor
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Mullins McLeod is a third-generation attorney from Walterboro, South Carolina, with more than 25 years of experience in civil rights and personal injury litigation. His legal work includes serving as part of the team that negotiated an $88 million settlement for victims of the 2015 Mother Emanuel AME Church shooting in Charleston.
+                </p>
+                <p>
+                  McLeod is running for Governor on a platform focused on fighting corruption, raising teacher pay, fixing roads and infrastructure, expanding affordable healthcare, and reforming ethics laws. He is self-funding his campaign to remain free from special interest influence.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Mullins McLeod's links">
+                <a href="https://mcleodscgov.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Mullins McLeod's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Billy Webster -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c3-name"
+            data-name="Billy Webster"
+            data-seat="Governor and Lieutenant Governor"
+            data-race="governor"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Billy Webster"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c3-name" class="candidate-name">Billy Webster</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Governor and Lieutenant Governor
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Billy Webster is a Democratic candidate for Governor of South Carolina in the 2026 election. He is based in Greenville, South Carolina.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Jason Belton -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c4-name"
+            data-name="Jason Belton"
+            data-seat="Secretary of State"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Jason Belton"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c4-name" class="candidate-name">Jason Belton</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Secretary of State
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Jason Belton is a Democratic candidate for South Carolina Secretary of State in the 2026 election. He is based in Blythewood, South Carolina.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Edwina Winter -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c5-name"
+            data-name="Edwina Winter"
+            data-seat="Secretary of State"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Edwina Winter"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c5-name" class="candidate-name">Edwina Winter</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Secretary of State
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Edwina Winter is a Democratic candidate for South Carolina Secretary of State in the 2026 election. She is running on a platform of accessible, transparent government services for all South Carolinians.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Edwina Winter's links">
+                <a href="https://winterforthewin.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Edwina Winter's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Vincent Coe -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c6-name"
+            data-name="Vincent Coe"
+            data-seat="State Treasurer"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Vincent Coe"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c6-name" class="candidate-name">Vincent Coe</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                State Treasurer
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Vincent Coe is a Florence, South Carolina banker and Democratic candidate for State Treasurer in 2026. A Darlington native whose father served in the Vietnam War, Coe brings more than 20 years of experience in banking to his campaign, serving as vice president at a regional bank. He is CRCM-certified (Certified Regulatory Compliance Manager) and serves as a FINRA arbitrator.
+                </p>
+                <p>
+                  Coe is running on a platform of fiscal responsibility, transparency in state financial management, addressing the underfunded pension system, and ensuring every dollar of taxpayer money is used efficiently for the benefit of all South Carolinians.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Vincent Coe's links">
+                <a href="https://vincentforsc.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Vincent Coe's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Trav Robertson Jr -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c7-name"
+            data-name="Trav Robertson Jr"
+            data-seat="State Treasurer"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Trav Robertson Jr"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c7-name" class="candidate-name">Trav Robertson Jr</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                State Treasurer
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Trav Robertson Jr is a Democratic candidate for South Carolina State Treasurer in the 2026 election. He is based in Columbia, South Carolina.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Richard Hricik -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c8-name"
+            data-name="Richard Hricik"
+            data-seat="Attorney General"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Richard Hricik"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c8-name" class="candidate-name">Richard Hricik</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Attorney General
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Richard Hricik is a Democratic candidate for South Carolina Attorney General in the 2026 election. An attorney based in Mount Pleasant, South Carolina, he is running to bring accountability and impartiality to the state's top law enforcement office.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tiffany Boozer -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c9-name"
+            data-name="Tiffany Boozer"
+            data-seat="Comptroller General"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Tiffany Boozer"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c9-name" class="candidate-name">Tiffany Boozer</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Comptroller General
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Tiffany Boozer is a Democratic candidate for South Carolina Comptroller General in the 2026 election. She is based in the Columbia area and is committed to delivering transparent and accountable financial oversight for the state.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bruce K Cole -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c10-name"
+            data-name="Bruce K Cole"
+            data-seat="Comptroller General"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Bruce K Cole"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c10-name" class="candidate-name">Bruce K Cole</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Comptroller General
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Bruce K. Cole is a Columbia-based Certified Public Accountant and Democratic candidate for South Carolina Comptroller General in the 2026 election. He brings extensive financial expertise to his campaign for the state's chief accounting office.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lisa Ellis -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c11-name"
+            data-name="Lisa Ellis"
+            data-seat="State Superintendent of Education"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Lisa Ellis"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c11-name" class="candidate-name">Lisa Ellis</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                State Superintendent of Education
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Lisa Ellis is a Democratic candidate for South Carolina Superintendent of Education in the 2026 election. She is running on a platform dedicated to improving public schools, supporting teachers, and expanding access to quality education for every child in the state.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Lisa Ellis's links">
+                <a href="https://ellisforsc.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Lisa Ellis's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sylvia Wright -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c12-name"
+            data-name="Sylvia Wright"
+            data-seat="State Superintendent of Education"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Sylvia Wright"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c12-name" class="candidate-name">Sylvia Wright</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                State Superintendent of Education
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Sylvia Wright is a Democratic candidate for South Carolina Superintendent of Education in the 2026 election. Based in the Moncks Corner area, she is committed to strengthening public education and expanding opportunity for students across South Carolina.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- DeShawn Blanding -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c13-name"
+            data-name="DeShawn Blanding"
+            data-seat="Commissioner of Agriculture"
+            data-race="state-office"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of DeShawn Blanding"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c13-name" class="candidate-name">DeShawn Blanding</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Commissioner of Agriculture
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  DeShawn Blanding is a Democratic candidate for South Carolina Commissioner of Agriculture in the 2026 election. Based in Manning, South Carolina, Blanding is running to support the state's farmers, strengthen rural economies, and expand access to locally grown food for South Carolina families.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="DeShawn Blanding's links">
+                <a href="https://blandingforsc.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="DeShawn Blanding's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Annie Andrews -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c14-name"
+            data-name="Annie Andrews"
+            data-seat="U.S. Senate"
+            data-race="us-senate"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Annie Andrews"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c14-name" class="candidate-name">Annie Andrews</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                U.S. Senate
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Dr. Annie Andrews is a pediatrician and Democratic candidate for U.S. Senate in 2026, challenging incumbent Lindsey Graham. After earning her medical degree from the University of Cincinnati, she served for 15 years as a pediatric hospitalist at the Medical University of South Carolina. Her advocacy was galvanized by the 2018 Parkland school shooting, and she ran as the Democratic nominee for SC's 1st Congressional District in 2022.
+                </p>
+                <p>
+                  Dr. Andrews is running on a platform of affordable healthcare, gun safety, quality public schools, and government accountability. She has pledged to accept no corporate PAC money. She lives in Mount Pleasant with her three children.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Annie Andrews's links">
+                <a href="https://drannieandrews.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Annie Andrews's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Brandon P Brown -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c15-name"
+            data-name="Brandon P Brown"
+            data-seat="U.S. Senate"
+            data-race="us-senate"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Brandon P Brown"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c15-name" class="candidate-name">Brandon P Brown</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                U.S. Senate
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Brandon Pendarvis Brown is a Democratic candidate for U.S. Senate in South Carolina in the 2026 election. He is based in Greer, South Carolina, and is running to bring a fresh Democratic voice to the United States Senate on behalf of South Carolinians.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Brandon P Brown's links">
+                <a href="https://brandonpbrown.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Brandon P Brown's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kyle Freeman -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c16-name"
+            data-name="Kyle Freeman"
+            data-seat="U.S. Senate"
+            data-race="us-senate"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Kyle Freeman"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c16-name" class="candidate-name">Kyle Freeman</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                U.S. Senate
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Kyle Odonnell Freeman is a Democratic candidate for U.S. Senate in South Carolina in the 2026 election. Based in Columbia, Freeman is committed to fighting for working families, expanding access to healthcare, and building a stronger future for all South Carolinians.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Kyle Freeman's links">
+                <a href="https://KyleFreemanForSenate.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Kyle Freeman's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- James E Jim Clyburn -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c17-name"
+            data-name="James E Jim Clyburn"
+            data-seat="U.S. House of Representatives, District 6"
+            data-race="us-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of James E Jim Clyburn"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c17-name" class="candidate-name">James E Jim Clyburn</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                U.S. House of Representatives, District 6
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Congressman Jim Clyburn is the longest-serving member of South Carolina's congressional delegation, first elected in 1992 as the first African American to represent the state in Congress since 1897. He served as House Majority Whip and rose to become one of the most influential Democratic leaders in Congress, playing a pivotal role in the passage of the Affordable Care Act.
+                </p>
+                <p>
+                  Clyburn is a champion for HBCUs, poverty alleviation through his 10-20-30 funding formula, rural broadband access, and voting rights. He is seeking an 18th term in the 2026 election to continue serving the communities of the 6th Congressional District, which includes Florence County.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="James E Jim Clyburn's links">
+                <a href="https://jimclyburn.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="James E Jim Clyburn's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Frederick R Goodwin -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c18-name"
+            data-name="Frederick R Goodwin"
+            data-seat="U.S. House of Representatives, District 6"
+            data-race="us-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Frederick R Goodwin"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c18-name" class="candidate-name">Frederick R Goodwin</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                U.S. House of Representatives, District 6
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Frederick R. Goodwin is a Democratic candidate for U.S. House of Representatives in South Carolina's 6th Congressional District in the 2026 election. He is based in Santee, South Carolina, and is running to serve the communities of the 6th District, which includes Florence County.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- John Gregory Vincent -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c19-name"
+            data-name="John Gregory Vincent"
+            data-seat="U.S. House of Representatives, District 7"
+            data-race="us-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of John Gregory Vincent"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c19-name" class="candidate-name">John Gregory Vincent</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                U.S. House of Representatives, District 7
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  John Gregory Vincent is a retired U.S. Navy Command Master Chief with 20 years of service, including years in the submarine force. A resident of Myrtle Beach and small business owner, Vincent is a Democratic candidate for South Carolina's 7th Congressional District — which includes Florence County — in the 2026 election.
+                </p>
+                <p>
+                  Running on a platform of bottom-up economics, protection of Medicaid and Medicare, expanded mental health resources, and commonsense gun safety, Vincent is working to become the first Democrat in over a century to represent the Grand Strand and Pee Dee in Congress.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="John Gregory Vincent's links">
+                <a href="https://vincentforcongress.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="John Gregory Vincent's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Jackie Hayes -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c20-name"
+            data-name="Jackie Hayes"
+            data-seat="SC House of Representatives, District 55"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Jackie Hayes"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c20-name" class="candidate-name">Jackie Hayes</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 55
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Rep. Jackie E. "Coach" Hayes has represented a district including portions of Florence County in the SC House of Representatives since 1998. Born in Marion, SC, Hayes graduated from Catawba College and spent decades as Athletic Director and head football coach at Dillon High School, earning over 300 wins and Athletic Director of the Year honors.
+                </p>
+                <p>
+                  In the legislature, Hayes serves on the House Ways and Means Committee and has made fully funding public education his top priority, working tirelessly for students and families across the Pee Dee region.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Terry Alexander -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c21-name"
+            data-name="Terry Alexander"
+            data-seat="SC House of Representatives, District 59"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Terry Alexander"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c21-name" class="candidate-name">Terry Alexander</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 59
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Rep. Terry Alexander is a Florence native who has served SC House District 59 — covering Florence and Marion counties — since 2006. He holds a Master of Divinity from Howard University and previously served on the Florence County Council for 16 years, twice as Chairman. He has also worked as a pastor, education consultant, and adjunct professor.
+                </p>
+                <p>
+                  In the legislature, Alexander serves as 2nd Vice Chair of the Education and Public Works Committee and has championed public education funding, voting rights, and economic opportunity for the people of the Pee Dee.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Terry Alexander's links">
+                <a href="https://alexanderforsc.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Terry Alexander's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Adrian Peguese Carter -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c22-name"
+            data-name="Adrian Peguese Carter"
+            data-seat="SC House of Representatives, District 60"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Adrian Peguese Carter"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c22-name" class="candidate-name">Adrian Peguese Carter</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 60
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Adrian Peguese Carter is a respected Florence attorney and Democratic candidate for SC House District 60 in the 2026 election. A member of the litigation team at Turner Padget Law, she was named the South Carolina Bar Young Lawyers Division's Young Lawyer of the Year in 2024, recognizing her exceptional contributions to the legal profession and her advocacy for underserved communities.
+                </p>
+                <p>
+                  Carter is running to bring her legal expertise and commitment to community service to the SC House, where she aims to represent the residents of Florence County with dedication and integrity.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Melissa OShea -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c23-name"
+            data-name="Melissa OShea"
+            data-seat="SC House of Representatives, District 60"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Melissa OShea"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c23-name" class="candidate-name">Melissa OShea</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 60
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Melissa O'Shea is a Democratic candidate for South Carolina House of Representatives District 60 in the 2026 election. Based in Florence, she is participating in the Democratic primary for this Florence County district, working to bring a strong Democratic voice to the SC General Assembly.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Robert Williams -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c24-name"
+            data-name="Robert Williams"
+            data-seat="SC House of Representatives, District 62"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Robert Williams"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c24-name" class="candidate-name">Robert Williams</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 62
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Rep. Robert Q. Williams has represented SC House District 62, covering parts of Darlington and Florence counties, since 2007. A veteran of the South Carolina Army National Guard who served in Iraq, Williams holds a B.S. from Voorhees College and an M.P.A. from Troy State University. He has worked as a Business Development Consultant and director of fatherhood engagement programs.
+                </p>
+                <p>
+                  Known as "The People's Candidate," Williams champions equal rights, women's rights, fully funded public education, affordable healthcare, and commonsense gun safety. He serves on the Labor, Commerce, and Industry Committee.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Robert Williams's links">
+                <a href="https://robertqwilliams.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Robert Williams's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kory Haskins -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c25-name"
+            data-name="Kory Haskins"
+            data-seat="SC House of Representatives, District 63"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Kory Haskins"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c25-name" class="candidate-name">Kory Haskins</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 63
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Kory Haskins is a Florence resident and Democratic candidate for SC House District 63 in the 2026 election. Educated at Florence-Darlington Technical College, Haskins ran as the Democratic nominee for this district in the 2024 general election. His campaign focuses on women's rights, healthcare access, and equality for all residents of Florence.
+                </p>
+                <p>
+                  He has earned an endorsement from Planned Parenthood Votes! and is committed to fighting for Florence families in the SC House of Representatives.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sloan Hilton -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c26-name"
+            data-name="Sloan Hilton"
+            data-seat="SC House of Representatives, District 63"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Sloan Hilton"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c26-name" class="candidate-name">Sloan Hilton</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 63
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Sloan Hilton is a Democratic candidate for South Carolina House of Representatives District 63 in the 2026 election. Based in Florence, Hilton is competing in the Democratic primary alongside Kory Haskins and is committed to representing the residents of Florence in the SC General Assembly.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Martin Cunningham -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c27-name"
+            data-name="Martin Cunningham"
+            data-seat="SC House of Representatives, District 101"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Martin Cunningham"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c27-name" class="candidate-name">Martin Cunningham</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 101
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Martin T. Cunningham is a Democratic candidate for South Carolina House of Representatives District 101, which includes portions of Berkeley, Florence, and Williamsburg counties, in the 2026 election. He is based in Greeleyville, South Carolina, and is running to represent the rural communities of the lower Pee Dee region.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Roger K Kirby -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c28-name"
+            data-name="Roger K Kirby"
+            data-seat="SC House of Representatives, District 101"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Roger K Kirby"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c28-name" class="candidate-name">Roger K Kirby</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 101
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Rep. Roger K. Kirby grew up in Lake City and is a Realtor and certified appraiser who has represented the Lake City and lower Florence County area in the SC House since 2014. He serves as House Assistant Minority Leader and sits on the Labor, Commerce, and Industry Committee. In 2025 he was elected First Vice Chair of the South Carolina Democratic Party.
+                </p>
+                <p>
+                  Kirby and his wife Pam have three children and are deeply involved in the Lake City community. He is running for re-election in the redrawn District 101, which covers parts of Berkeley, Florence, and Williamsburg counties.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cheryl O Lane -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c29-name"
+            data-name="Cheryl O Lane"
+            data-seat="SC House of Representatives, District 101"
+            data-race="sc-house"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Cheryl O Lane"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c29-name" class="candidate-name">Cheryl O Lane</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                SC House of Representatives, District 101
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Cheryl O. Lane is a Democratic candidate for South Carolina House of Representatives District 101, which includes portions of Berkeley, Florence, and Williamsburg counties, in the 2026 election. She is based in Greeleyville, South Carolina, and is running to serve the residents of the Williamsburg and lower Florence County communities.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Susan McGill -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c30-name"
+            data-name="Susan McGill"
+            data-seat="Solicitor, Circuit 12 (Florence & Marion Counties)"
+            data-race="other"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Susan McGill"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c30-name" class="candidate-name">Susan McGill</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Solicitor, Circuit 12 (Florence & Marion Counties)
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Susan C. McGill is a Florence attorney and Democratic candidate for Solicitor of South Carolina's 12th Judicial Circuit, which serves Florence and Marion counties, in the 2026 election. McGill has served as an Assistant Solicitor in the 12th Circuit Solicitor's Office, where she has prosecuted cases in both Magistrates Court and General Sessions Court across a broad range of criminal matters.
+                </p>
+                <p>
+                  Her legal practice also encompasses personal injury and family law. McGill brings hands-on courtroom experience and a commitment to justice for every resident of Florence and Marion counties.
+                </p>
+              </div>
+              <div class="candidate-links" aria-label="Susan McGill's links">
+                <a href="https://susanmcgillforsolicitor.com" class="candidate-link" target="_blank" rel="noopener noreferrer" aria-label="Susan McGill's campaign website (opens in a new tab)">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  Website
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- April E Allison -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c31-name"
+            data-name="April E Allison"
+            data-seat="Auditor, Florence County"
+            data-race="other"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of April E Allison"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c31-name" class="candidate-name">April E Allison</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Auditor, Florence County
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  April E. Allison is a Democratic candidate for Florence County Auditor in the 2026 election. Based in Johnsonville, South Carolina, she is running to bring accountability and transparency to the Florence County Auditor's office.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Jason M Springs -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c32-name"
+            data-name="Jason M Springs"
+            data-seat="Florence County Council, District 1"
+            data-race="county-council"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Jason M Springs"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c32-name" class="candidate-name">Jason M Springs</h3>
               <p class="candidate-seat">
                 <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
@@ -156,44 +1334,27 @@
               </p>
               <div class="candidate-bio">
                 <p>
-                  Jane Doe has been a Florence County resident for over 20 years, raising her
-                  family and building her small business right here in our community. She believes
-                  in transparent, accountable government that works for every resident.
+                  Jason M. Springs has served as Florence County Council Member for District 1 since 2013, representing the Lake City and lower Florence County area. Before joining the County Council, Springs served two terms on Lake City City Council, demonstrating a longstanding commitment to his community.
                 </p>
                 <p>
-                  If elected, Jane will focus on improving local infrastructure, expanding access
-                  to affordable healthcare, and creating good-paying jobs for Florence County families.
+                  Known for his direct engagement with constituents, Springs works to ensure the voices of District 1 residents are heard on county infrastructure, public services, and economic development.
                 </p>
-              </div>
-              <div class="candidate-links" aria-label="Jane Doe's links">
-                <a href="#" class="candidate-link" aria-label="Jane Doe's campaign website">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                  Website
-                </a>
-                <a href="#" class="candidate-link" aria-label="Jane Doe on Facebook">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-                  Facebook
-                </a>
-                <a href="#" class="candidate-link" aria-label="Jane Doe on X / Twitter">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                  X / Twitter
-                </a>
               </div>
             </div>
           </article>
 
-          <!-- Candidate 2 — Placeholder -->
+          <!-- Alphonso Bradley -->
           <article
             class="candidate-card"
-            aria-labelledby="c2-name"
-            data-name="John Smith"
-            data-seat="SC House of Representatives, District 57"
-            data-race="sc-house"
+            aria-labelledby="c33-name"
+            data-name="Alphonso Bradley"
+            data-seat="Florence County Council, District 3"
+            data-race="county-council"
           >
             <div class="candidate-photo-wrap">
               <img
                 src="../assets/candidates/placeholder.svg"
-                alt="Headshot of John Smith"
+                alt="Headshot of Alphonso Bradley"
                 class="candidate-photo"
                 width="200"
                 height="200"
@@ -201,37 +1362,92 @@
               />
             </div>
             <div class="candidate-info">
-              <h3 id="c2-name" class="candidate-name">John Smith</h3>
+              <h3 id="c33-name" class="candidate-name">Alphonso Bradley</h3>
               <p class="candidate-seat">
                 <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
                 </svg>
-                SC House of Representatives, District 57
+                Florence County Council, District 3
               </p>
               <div class="candidate-bio">
                 <p>
-                  John Smith grew up in Florence and attended Florence-Darlington Technical College
-                  before serving our country in the United States Army for eight years. He returned
-                  home with a deep commitment to public service.
+                  Alphonso 'AL' Bradley is a Democratic candidate for Florence County Council District 3 in the 2026 election. Based in Florence, Bradley is running to serve the residents of District 3 and work to improve the quality of life for all Florence County families.
                 </p>
-                <p>
-                  John's platform centers on fully funding public education, protecting voting rights,
-                  and ensuring that every veteran in the Pee Dee region receives the benefits and
-                  care they have earned.
-                </p>
-              </div>
-              <div class="candidate-links" aria-label="John Smith's links">
-                <a href="#" class="candidate-link" aria-label="John Smith's campaign website">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                  Website
-                </a>
-                <a href="#" class="candidate-link" aria-label="John Smith on Facebook">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-                  Facebook
-                </a>
               </div>
             </div>
           </article>
+
+          <!-- Decar Brown -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c34-name"
+            data-name="Decar Brown"
+            data-seat="Florence County Council, District 7"
+            data-race="county-council"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Decar Brown"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c34-name" class="candidate-name">Decar Brown</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Florence County Council, District 7
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Decar Brown is a Democratic candidate for Florence County Council District 7 in the 2026 election. Based in Florence, Brown is running to represent the residents of District 7 on the County Council and to bring fresh energy and ideas to Florence County governance.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Waymon Mumford -->
+          <article
+            class="candidate-card"
+            aria-labelledby="c35-name"
+            data-name="Waymon Mumford"
+            data-seat="Florence County Council, District 7"
+            data-race="county-council"
+          >
+            <div class="candidate-photo-wrap">
+              <img
+                src="../assets/candidates/placeholder.svg"
+                alt="Headshot of Waymon Mumford"
+                class="candidate-photo"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <div class="candidate-info">
+              <h3 id="c35-name" class="candidate-name">Waymon Mumford</h3>
+              <p class="candidate-seat">
+                <svg class="seat-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                </svg>
+                Florence County Council, District 7
+              </p>
+              <div class="candidate-bio">
+                <p>
+                  Rev. Dr. Waymon Mumford has represented Florence County Council District 7 since 1994 and served as Council Chairman in 2019. A lifelong Florence resident, he spent 25 years with the Florence Police Department, retiring as Chief of Police, before transitioning to elected public service. He holds degrees from Florence-Darlington Technical College, Limestone College, and the Interdenominational Theological Center, and earned an honorary Doctor of Laws from Morris College.
+                </p>
+                <p>
+                  Dr. Mumford has served as pastor of Central Baptist Church since 1998, and his decades of service reflect a lifetime commitment to justice, public safety, and the well-being of Florence County residents.
+                </p>
+              </div>
+            </div>
+          </article>
+
 
         </div><!-- /#candidate-grid -->
 
