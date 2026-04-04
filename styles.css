@@ -50,6 +50,11 @@
   padding: 0;
 }
 
+/* Ensure the HTML hidden attribute always hides elements,
+   even when an author-stylesheet display rule (e.g. display:flex)
+   would otherwise override the browser's UA [hidden]{display:none}. */
+[hidden] { display: none !important; }
+
 html {
   scroll-behavior: smooth;
 }
