@@ -105,9 +105,19 @@ ul[role="list"] {
 }
 
 /* ── Focus Styles (WCAG 2.4.7 / 2.4.11) ────────────────────── */
+/*
+ * Dual-ring technique: a 3 px gold outline sits at offset 3 px from
+ * the element's border-box, and a 6 px navy box-shadow fills the gap
+ * between the element edge and the outline.
+ *
+ * On dark (navy) backgrounds : the gold ring contrasts ≥ 8.6:1 with navy.
+ * On light (white/off-white) : the navy shadow contrasts ≥ 13:1 with white,
+ *   satisfying the WCAG 2.4.11 ≥ 3:1 focused-vs-unfocused-pixel requirement.
+ */
 :focus-visible {
   outline: 3px solid var(--color-gold);
   outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--color-navy);
   border-radius: var(--radius-sm);
 }
 
@@ -300,6 +310,8 @@ a:hover { color: var(--color-red); }
   font-weight: 600;
   font-size: 0.9375rem;
   transition: color var(--transition);
+  /* WCAG 2.5.8 – ensure pointer target height ≥ 24 px */
+  padding-block: 0.5rem;
 }
 
 #primary-nav a:hover {
@@ -673,9 +685,15 @@ a:hover { color: var(--color-red); }
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 
+/* Border highlight on all focus; keyboard ring comes from global :focus-visible. */
 .search-input:focus {
-  outline: none;
   border-color: var(--color-navy);
+}
+/* Pointer (non-keyboard) focus only – suppress browser default outline and show
+   a subtle glow in place of the full keyboard ring (WCAG 2.4.7 does not require
+   a focus indicator for pointer input). */
+.search-input:focus:not(:focus-visible) {
+  outline: none;
   box-shadow: 0 0 0 3px rgba(0,40,104,0.15);
 }
 
@@ -705,9 +723,12 @@ a:hover { color: var(--color-red); }
   transition: border-color var(--transition);
 }
 
+/* Border highlight on all focus; keyboard ring comes from global :focus-visible. */
 .filter-select:focus {
-  outline: none;
   border-color: var(--color-navy);
+}
+.filter-select:focus:not(:focus-visible) {
+  outline: none;
   box-shadow: 0 0 0 3px rgba(0,40,104,0.15);
 }
 
@@ -730,7 +751,12 @@ a:hover { color: var(--color-red); }
   color: var(--color-white);
 }
 
+/* Keyboard ring comes from global :focus-visible; suppress default for pointer only. */
 .btn-clear-filters:focus {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+.btn-clear-filters:focus:not(:focus-visible) {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0,40,104,0.25);
 }
