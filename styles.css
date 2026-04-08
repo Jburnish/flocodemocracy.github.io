@@ -266,35 +266,13 @@ a:hover { color: var(--color-red); }
 .site-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.625rem;
   text-decoration: none;
 }
 
-.logo-star {
-  font-size: 1.75rem;
-  color: var(--color-gold);
-  line-height: 1;
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.logo-floco {
-  font-size: 1.375rem;
-  font-weight: 900;
-  color: var(--color-white);
-  letter-spacing: 0.02em;
-}
-
-.logo-dem {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--color-gold);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.logo-img {
+  height: 52px;
+  width: 52px;
+  display: block;
 }
 
 /* Desktop nav */
